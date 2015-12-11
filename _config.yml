@@ -1,0 +1,13 @@
+# Site settings
+title: Hack Club reading list
+email: team@hackclub.io
+description: > # this means to ignore newlines until "baseurl:"
+  A collection of recommended reading curated by Hack Club members, leaders, and
+  staff.
+baseurl: "/reading-list/" # the subpath of your site, e.g. /blog/
+url: "https://hackclub.github.io/" # the base hostname & protocol for your site
+twitter_username: starthackclub
+github_username:  hackclub
+
+# Build settings
+markdown: kramdown

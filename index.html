@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Publications</h1>
+
+  <ul class="publication-list">
+    {% for publication in site.data.publications %}
+      <li>
+        <h2>
+          {% if publication.link %}
+            <a class="publication-link" href="{{ publication.link }}">
+          {% endif %}
+            {{ publication.title }}
+          {% if publication.link %}
+          </a>
+          {% endif %}
+        </h2>
+        {% if publication.author %}
+          <p class="publication-meta">by {{ publication.author }}</p>
+        {% endif %}
+        {% if publication.description %}
+          <blockquote>
+            {{ publication.description }}
+            {% if publication.contributor %}
+              <br>
+              - {{ publication.contributor }}
+            {% endif %}
+          </blockquote>
+        {% elsif publication.contributor %}
+          Contributed by {{ publication.contributor }}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

@@ -1,0 +1,9 @@
+# Required fields: title
+# Optional fields: author, description, contributor, link
+
+- title: How to Win Friends & Influence People
+  author: Dale Carnegie
+  description: >
+    A great read that helped me understand how to stay engaged in conversation and listen to people.
+  link: http://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034
+  contributor: Max Wofford
