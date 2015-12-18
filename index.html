@@ -7,7 +7,7 @@ layout: default
   <h1 class="page-heading">Publications</h1>
 
   <ul class="publication-list">
-    {% for publication in site.data.publications %}
+    {% for publication in site.data.publications reversed %}
       <li>
         <h2>
           {% if publication.link %}
